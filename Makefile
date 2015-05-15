@@ -11,9 +11,9 @@ install:
 	@echo ''
 	@echo 'USAGE:'
 	@echo '------'
-	@echo 'idid fish: CLI re-implementation of idonethis.com'
-	@echo '           using fish (http://fishshell.com)'
-	@echo 'idid \"this\"    - save an item with today\'s date'
-	@echo 'idid -y \"this\" - save an item with yesterday\'s date'
-	@echo 'idid -t        - list all tags'
-	@echo 'idid -t tag    - list all items with given \'tag\''
+	@echo "idid fish: CLI re-implementation of idonethis.com"
+	@echo "           using fish (http://fishshell.com)"
+	@echo "idid \"this\"    - save an item with today's date"
+	@echo "idid -y \"this\" - save an item with yesterday's date"
+	@echo "idid -t        - list all tags"
+	@echo "idid -t tag    - list all items with given 'tag'"
