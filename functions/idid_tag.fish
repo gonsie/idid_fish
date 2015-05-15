@@ -10,6 +10,7 @@ function idid_tag -d "idid tag lookup on items"
              end
           end
           if test $__tag -eq 1
+             grep -o "#[^ ]*" $IDIDS | sort | uniq
              kill -SIGINT %self
           end
 end
