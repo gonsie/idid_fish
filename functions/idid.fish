@@ -7,6 +7,6 @@ function idid -d "idid this"
             if not test $__pd = $__td
                date "+%a %b %d %Y" >> $IDIDS
             end
-            echo $argv >> $IDIDS
+            echo "- $argv" >> $IDIDS
          end
 end
