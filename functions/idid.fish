@@ -10,5 +10,8 @@ function idid -d "idid this"
                date "+%a %b %d %Y" >> $IDIDS
             end
             echo "- $argv" >> $IDIDS
+         else
+            tail -r $IDIDS | grep -m 1 "^[^-;]"
+            tail -r $IDIDS | awk '{if(/-/)print;else exit}'
          end
 end
