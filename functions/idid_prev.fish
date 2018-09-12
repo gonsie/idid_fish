@@ -9,7 +9,7 @@ function idid_prev -d "idid with date adjustment"
                set __what 1
             end
          end
-         if test $__what -eq 1
+         if test ${__what} -eq 1
             set -l __pd (tail -r $IDIDS | grep -m 1 "^[^-;]")
             set -l __td (date -v{$argv[2]} "+%a %b %d %Y")
             if not test $__pd = $__td

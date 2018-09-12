@@ -10,7 +10,7 @@ function idid_help -d "prints idid help if flagged"
                 set __help 1
              end
           end
-          if test $__help -eq 1
+          if test ${__help} -eq 1
              echo ""
              echo "idid fish: CLI re-implementation of idonethis.com"
              echo "           using fish (http://fishshell.com)"
